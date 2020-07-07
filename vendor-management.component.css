@@ -1,0 +1,220 @@
+.vendor-sidebar > ul{
+    padding-left: 0px;
+    list-style: none;
+}
+
+.vendor-sidebar{
+    padding-left: 0px;
+}
+
+.vendor-sidebar > ul li { background:#f9f9f9; }
+.vendor-sidebar > ul li:nth-child(odd) { background:#f4f4f4; }
+.vendor-sidebar > ul li a {
+    display: block;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.vendor-sidebar > ul li a:before {
+    content: "";
+    background: url('../../../../assets/images/vendorlist.svg') no-repeat;
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    width: 18px;
+    height: 18px;
+}
+
+.vendor-sidebar > ul li a h5{
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 7px;
+
+}
+
+.vendor-row{
+    display: grid;
+    grid-template-columns: 22% 78%;
+    grid-template-rows: calc( 100vh - 110px);
+}
+
+.vendor-sidebar > ul li a:hover{
+    text-decoration: none;
+}
+
+.vendor-sidebar > ul li a span{
+    font-size: 12px;
+    position: relative;
+    top: -5px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.vendor-sidebar > ul li.active a h5{
+    color: #fff;
+}
+
+.vendor-sidebar > ul li.active a span{
+    color: #fff;
+}
+
+.vendor-sidebar > ul li.active{
+    background-color: #cd0000;
+}
+
+.sidebar-header{
+    font-size: 15px;
+    color: #333333;
+    height: auto;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    background: #f4f4f4;
+}
+
+.topper{
+    padding-top: 10px;
+}
+
+
+.dashboard-widgets{
+    display: grid;
+    grid-template-columns: 37% 26% 37%;
+}
+
+.mid-widget{
+    display: grid;
+    grid-template-rows: 35% 65%;
+}
+
+
+.widget-card{
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.widget-title{
+    background-color:#f4f4f4;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 600;
+    padding:10px;
+    float: left;
+    width: 100%;
+}
+
+.widget-content{
+    background-color: #f9f9f9;
+    padding:10px
+}
+
+.contact-widget{
+    padding-left: 0px;
+    list-style: none;
+    margin-top: -10px;
+}
+
+.contact-widget > li{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.contact-person{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.contact-email{
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.contact-phone{
+    font-size: 12px;
+}
+
+
+.left-widget .widget-card{
+    padding-top: 0px;
+}
+
+.end-widget .widget-card{
+    padding-top: 0px;
+}
+
+.mid-widget .widget-card{
+    padding: 0px;
+}
+
+.contact-widget li { background:#f4f4f4;padding: 10px; }
+.contact-widget li:nth-child(odd) { background:#f9f9f9; }
+
+.portal-avatar img{
+    border-radius: 50%;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.portal-widget{
+    max-height: 250px;
+}
+
+.portal-avatar{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.portal-name{
+    text-align: center;
+}
+
+.portal-widget .widget-content{
+    float: left;
+    width: 100%;
+}
+
+
+.widget-table  td, .widget-table th{
+    border-top: none;
+    font-size: 14px;
+    padding-bottom: 0px;
+}
+
+.widget-content.table-content{
+    padding: 10px 50px;
+    height: auto;
+    min-height: 220px;
+}
+
+@media all and (max-width:1500px){
+    .vendor-sidebar > ul li a h5{
+        font-size: 12px;
+    }
+
+    .vendor-sidebar > ul li a span{
+        font-size: 10px;
+    }
+
+    .widget-title{
+        font-size: 13px;
+    }
+
+    .widget-table  td, .widget-table th{
+        font-size: 12px;
+    }   
+}
