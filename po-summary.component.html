@@ -1,0 +1,292 @@
+<div class="row tab-bar">
+    <div class="col-4">
+        <div class="red-menu-button">
+            PO Summary
+        </div>
+        <div class="red-menu-button grey-button">
+            <span>PO #</span>
+            <span class="po-num">543566345</span>
+            <span class="close"><a (click)="backToDashboard()"><img src="../../../../assets/images/close.svg"></a></span>
+        </div>        
+    </div>
+    <div class="col-8 right-button">
+        <button class="btn btn-red btn-white" disabled>
+            PO Report
+          </button>        
+
+
+    </div>
+</div>
+<div class="dashboard-content">
+    <div class="po-sidebar">
+        <div class="po-title-bar">
+            Details
+        </div>
+        <div class="po-sidebar-content">
+            <div class="innercontent">
+                <div class="left">PO#</div>
+                <div class="right"><span class="red-text">543566345</span></div>
+            </div>
+            <div class="innercontent">
+                <div class="left">Vendor</div>
+                <div class="right">Ultra Engg.</div>
+            </div>
+            <div class="innercontent">
+                <div class="left">Vendor #</div>
+                <div class="right">56456FG456</div>
+            </div>   
+            <div class="innercontent">
+                <div class="left">Buyer</div>
+                <div class="right">Halliburton Energy Services</div>
+            </div>   
+            <div class="innercontent">
+                <div class="left">Contact</div>
+                <div class="right">
+                    <span class="contact-email">Johnthew@halliburton.com</span>
+                    <span class="contact-number">044 - 54564566</span>
+                </div>
+            </div>    
+            <div class="innercontent">
+                <div class="left">Ship To</div>
+                <div class="right">
+                    <span class="ship-address">Bharat Petroleum Refinery, Mahul, Chembur, Mumbai, Maharashtra 400074</span>
+                </div>
+            </div>   
+            <div class="innercontent">
+                <div class="left">Items</div>
+                <div class="right">5</div>
+            </div> 
+            <div class="innercontent">
+                <div class="left">Status</div>
+                <div class="right"><span class="orange"></span></div>
+            </div>                                                                
+        </div>
+
+        <div class="po-title-bar">
+            Operational Days
+        </div>
+        <div class="operational-content">
+            <div class="operational-row">
+                <div>Created On</div>
+                <div>Completed On</div>
+                <div>Due Date</div>
+            </div>
+            <div class="operational-row operation-info">
+                <div>07 May 2020</div>
+                <div>-</div>
+                <div>15 May 2020</div>
+            </div>            
+        </div>
+
+        <div class="po-title-bar">
+           Change Request <span class="action-text">Approve</span>
+        </div>
+        <div class="cr-content">
+            <div class="cr-row">
+                <div>System Proposed Date</div>
+                <div>Vendor Proposed Due Date</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="po-right-content">
+        <div class="col-12 current-vendor">
+            <div class="vendor-box">
+                <div class="current-vendor-info">
+                    <span class="vendor-info-title">PO items</span>
+                </div>                
+                <div class="search-box">
+                    <div class="inner-searchbox">
+                        <input type="text" class="form-control search-input" placeholder="PART # , Description, Process, AWB, Year, Date">
+                        <div class="input-group-append searchbtn">
+                          <button class="btn" type="submit"><img src="../../../assets/images/search.svg"></button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+
+
+        <div class="po-listing">
+            <div class="po-list-header">
+                <div class="po-list-header-item">Item</div>
+                <div class="po-list-header-item">Part#</div>
+                <div class="po-list-header-item">Description</div>
+                <div class="po-list-header-item">Order Quantity#</div>
+                <div class="po-list-header-item">Unit</div>
+                <div class="po-list-header-item">Cost</div>
+                <div class="po-list-header-item">Status</div>
+                <div class="po-list-header-item">Due Date</div>
+                <div class="po-list-header-item">Projected Due Date</div>
+                <div class="po-list-header-item">Process</div>
+                <div class="po-list-header-item">Shipment</div>
+            </div>
+
+            <div class="po-list-content">
+                <div class="po-list-content-item">1</div>
+                <div class="po-list-content-item order-title">101974518</div>
+                <div class="po-list-content-item">
+                    <div class="desc-text">
+                        <span tooltip="AIR MUF,AC980,1/4 IN NPT" containerClass="hb-tooltip">AIR MUF,AC980,1/4 IN NPT</span>
+                    </div>
+                </div>
+                <div class="po-list-content-item">35</div>
+                <div class="po-list-content-item">Each</div>
+                <div class="po-list-content-item">250$</div>
+                <div class="po-list-content-item"><span class="green-bar"></span><span>30%</span></div>
+                <div class="po-list-content-item">20 May 2020</div>
+                <div class="po-list-content-item">
+                    <span class="projected-duedate">20 May 2020 <img src="../../../../assets/images/next-date.svg"></span>
+                </div>
+                <div class="po-list-content-item process-step">
+                    <span class="current-process" tooltip="Incoming Inspection" >Incoming Inspection</span>
+                    <span class="process-date">15 May 2020</span>
+                    <span class="process-edit"><img src="../../../../assets/images/edit.svg"></span>
+                </div>
+                <div class="po-list-content-item">
+                    <img src="../../../../assets/images/redbox.svg" class="redbox">
+                </div>
+            </div> 
+   
+            
+            <div class="po-list-content">
+                <div class="po-list-content-item">2</div>
+                <div class="po-list-content-item order-title">101974518</div>
+                <div class="po-list-content-item">
+                    <div class="desc-text">
+                        <span tooltip="AIR MUF,AC980,1/4 IN NPT" containerClass="hb-tooltip">AIR MUF,AC980,1/4 IN NPT</span>
+                    </div>
+                </div>
+                <div class="po-list-content-item">35</div>
+                <div class="po-list-content-item">Each</div>
+                <div class="po-list-content-item">250$</div>
+                <div class="po-list-content-item"><span class="green-bar"></span><span>30%</span></div>
+                <div class="po-list-content-item">20 May 2020</div>
+                <div class="po-list-content-item">
+                    <span class="projected-duedate">20 May 2020 <img src="../../../../assets/images/next-date.svg"></span>
+                </div>
+                <div class="po-list-content-item process-step">
+                    <span class="current-process" tooltip="Incoming Inspection" >Incoming Inspection</span>
+                    <span class="process-date">15 May 2020</span>
+                    <span class="process-edit"><img src="../../../../assets/images/edit.svg"></span>
+                </div>
+                <div class="po-list-content-item">
+                    <img src="../../../../assets/images/redbox.svg" class="redbox">
+                </div>
+            </div> 
+
+
+            <div class="po-list-content">
+                <div class="po-list-content-item">3</div>
+                <div class="po-list-content-item order-title">101974518</div>
+                <div class="po-list-content-item">
+                    <div class="desc-text">
+                        <span tooltip="AIR MUF,AC980,1/4 IN NPT" containerClass="hb-tooltip">AIR MUF,AC980,1/4 IN NPT</span>
+                    </div>
+                </div>
+                <div class="po-list-content-item">35</div>
+                <div class="po-list-content-item">Each</div>
+                <div class="po-list-content-item">250$</div>
+                <div class="po-list-content-item"><span class="green-bar"></span><span>30%</span></div>
+                <div class="po-list-content-item">20 May 2020</div>
+                <div class="po-list-content-item">
+                    <span class="projected-duedate">20 May 2020 <img src="../../../../assets/images/next-date.svg"></span>
+                </div>
+                <div class="po-list-content-item process-step">
+                    <span class="current-process" tooltip="Incoming Inspection" >Incoming Inspection</span>
+                    <span class="process-date">15 May 2020</span>
+                    <span class="process-edit"><img src="../../../../assets/images/edit.svg"></span>
+                </div>
+                <div class="po-list-content-item">
+                    <img src="../../../../assets/images/redbox.svg" class="redbox">
+                </div>
+            </div> 
+
+
+            <div class="po-list-content">
+                <div class="po-list-content-item">4</div>
+                <div class="po-list-content-item order-title">101974518</div>
+                <div class="po-list-content-item">
+                    <div class="desc-text">
+                        <span tooltip="AIR MUF,AC980,1/4 IN NPT" containerClass="hb-tooltip">AIR MUF,AC980,1/4 IN NPT</span>
+                    </div>
+                </div>
+                <div class="po-list-content-item">35</div>
+                <div class="po-list-content-item">Each</div>
+                <div class="po-list-content-item">250$</div>
+                <div class="po-list-content-item"><span class="green-bar"></span><span>30%</span></div>
+                <div class="po-list-content-item">20 May 2020</div>
+                <div class="po-list-content-item">
+                    <span class="projected-duedate">20 May 2020 <img src="../../../../assets/images/next-date.svg"></span>
+                </div>
+                <div class="po-list-content-item process-step">
+                    <span class="current-process" tooltip="Incoming Inspection" >Incoming Inspection</span>
+                    <span class="process-date">15 May 2020</span>
+                    <span class="process-edit"><img src="../../../../assets/images/edit.svg"></span>
+                </div>
+                <div class="po-list-content-item">
+                    <img src="../../../../assets/images/redbox.svg" class="redbox">
+                </div>
+            </div>             
+            
+            <div class="po-list-content">
+                <div class="po-list-content-item">5</div>
+                <div class="po-list-content-item order-title">101974518</div>
+                <div class="po-list-content-item">
+                    <div class="desc-text">
+                        <span tooltip="AIR MUF,AC980,1/4 IN NPT" containerClass="hb-tooltip">AIR MUF,AC980,1/4 IN NPT</span>
+                    </div>
+                </div>
+                <div class="po-list-content-item">35</div>
+                <div class="po-list-content-item">Each</div>
+                <div class="po-list-content-item">250$</div>
+                <div class="po-list-content-item"><span class="orange-bar"></span><span>30%</span></div>
+                <div class="po-list-content-item">20 May 2020</div>
+                <div class="po-list-content-item">
+                    <span class="projected-duedate">20 May 2020 <img src="../../../../assets/images/next-date.svg"></span>
+                </div>
+                <div class="po-list-content-item process-step">
+                    <span class="current-process" tooltip="Incoming Inspection" >Incoming Inspection</span>
+                    <span class="process-date">15 May 2020</span>
+                    <span class="process-edit"><img src="../../../../assets/images/edit.svg"></span>
+                </div>
+                <div class="po-list-content-item">
+                    <img src="../../../../assets/images/redbox.svg" class="redbox">
+                </div>
+            </div> 
+
+
+            <div class="po-list-content">
+                <div class="po-list-content-item">6</div>
+                <div class="po-list-content-item order-title">101974518</div>
+                <div class="po-list-content-item">
+                    <div class="desc-text">
+                        <span tooltip="AIR MUF,AC980,1/4 IN NPT" containerClass="hb-tooltip">AIR MUF,AC980,1/4 IN NPT</span>
+                    </div>
+                </div>
+                <div class="po-list-content-item">35</div>
+                <div class="po-list-content-item">Each</div>
+                <div class="po-list-content-item">250$</div>
+                <div class="po-list-content-item"><span class="red-bar"></span><span>30%</span></div>
+                <div class="po-list-content-item">20 May 2020</div>
+                <div class="po-list-content-item">
+                    <span class="projected-duedate">20 May 2020 <img src="../../../../assets/images/next-date.svg"></span>
+                </div>
+                <div class="po-list-content-item process-step">
+                    <span class="current-process" tooltip="Incoming Inspection" >Incoming Inspection</span>
+                    <span class="process-date">15 May 2020</span>
+                    <span class="process-edit"><img src="../../../../assets/images/edit.svg"></span>
+                </div>
+                <div class="po-list-content-item">
+                    <img src="../../../../assets/images/redbox.svg" class="redbox">
+                </div>
+            </div> 
+        </div>
+
+
+
+    </div>
+</div>
+
+
