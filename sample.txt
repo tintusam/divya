@@ -1,3 +1,6 @@
+
+* will be passing userrole also with every payload
+
 Display Assets when logged in
 URL: https://ramsolutionfunction.azurewebsites.net/api/DisplayAsset
 Request Payload
