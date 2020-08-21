@@ -1,0 +1,74 @@
+Display Assets when logged in
+URL: https://ramsolutionfunction.azurewebsites.net/api/DisplayAsset
+Request Payload
+{ "assetList":["00-00-00-00-00-00-10-02","00-00-00-00-00-00-10-03"]}
+or 
+{ "assetList":[
+	{"assetId":"00-00-00-00-00-00-10-02"},
+	{"assetId":"00-00-00-00-00-00-10-03"}
+	]
+}
+
+if payload is null, then all assets should be returned  * this will be same for all apis which needs assetList in request
+{ "assetList":[]}
+
+Dashboard Widgets
+
+Display All alerts count on dashboard widgets on top
+URL https://ramsolutionfunction.azurewebsites.net/api/RamGetAlertCount
+Request payload will be same as above. Will be passing assetList from front end
+
+Display Assets status 
+https://ramsolutionfunction.azurewebsites.net/api/DisplayAssetStatus
+Payload will be {"DeviceStatus":"Online", "assetList":["00-00-00-00-00-00-10-02","00-00-00-00-00-00-10-03"]}
+
+Display Assets Type
+https://ramsolutionfunction.azurewebsites.net/api/DisplayAssetType
+{RAM_Asset_Type: "Non Movable","assetList":["00-00-00-00-00-00-10-02","00-00-00-00-00-00-10-03"]}
+
+Display Alerts
+https://ramsolutionfunction.azurewebsites.net/api/DisplayAlert
+{RAM_Status: "Red", "assetList":["00-00-00-00-00-00-10-02","00-00-00-00-00-00-10-03"]}
+
+Administration Page
+
+Display User
+https://ramfuncapi.azurewebsites.net/api/DisplayUser
+{ "assetList":["00-00-00-00-00-00-10-02","00-00-00-00-00-00-10-03"]}
+Modify Add User API to accept user email, user role and asset ids from front end.
+Random password should be generated in backend and emailed it to that invited user.
+User should be able to login with that password.
+
+Create User
+https://ramsolutionfunction.azurewebsites.net/api/CreateUser
+{
+  "Role": "Supervisor",
+  "Mail": "divya.gopinath91@gmail.com",
+  "assetList":["00-00-00-00-00-00-10-02","00-00-00-00-00-00-10-03"]
+}
+
+Edit User
+https://ramfuncapi.azurewebsites.net/api/editUser
+{
+  "Role": "Supervisor",
+  "Mail": "divya.gopinath91@gmail.com",
+  "assetList":["00-00-00-00-00-00-10-02","00-00-00-00-00-00-10-03"]
+}
+
+Device Manager
+No changes. Can be hidden for Workforce and Supervisors from frond end.
+
+Assets Manager
+
+
+
+
+
+
+
+
+
+
+
+
+
