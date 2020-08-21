@@ -56,9 +56,34 @@ https://ramfuncapi.azurewebsites.net/api/editUser
 }
 
 Device Manager
-No changes. Can be hidden for Workforce and Supervisors from frond end.
+https://ramfuncapi.azurewebsites.net/api/RAMSensorKitCreationSql
+https://ramfuncapi.azurewebsites.net/api/editSensorKit
+Have to add a dropdown to select customer and assign him to sensorkit while creating and editing.
+Request payload will contain customer email and customer role.
+if the request payload is empty, all sensorkits should be sent in response ( for superadmin )
+{
+  "Role": "Customer",
+  "Mail": "customer1@gmail.com"
+}
+
 
 Assets Manager
+Create Asset page
+if admin is adding asset there should be a dropdown to select customer to which the asset has to be assigned.
+If customer is adding, we can directly assign the customer as owner of that asset.
+Customer can add/edit supervisors and assign them the asset.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
