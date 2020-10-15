@@ -1,0 +1,166 @@
+<div class="TrackerNavbar">
+
+
+    <div class="tnt-sites">
+        <select (change)="selectedSite($event)">
+            <option *ngFor="let site of siteList" value="{{site?.Sid}}">{{ site?.StoreId }}</option>
+        </select>
+    </div>
+</div>
+<div class="tnt-dashboard-content">
+    <div class="tnt-filter-row grey-row">
+        <!-- <ul class="nav nav-tabs filtertabs">
+            <li><a class="nav-link active" data-toggle="tab" href="#Workers">Workers</a></li>
+            <li><a class="nav-link active" data-toggle="tab" href="#Assets">Assets</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane container active" id="Workers">workers list</div>
+            <div class="tab-pane container fade" id="Assets">.Asset list comes here..</div>
+        </div> -->
+
+        <ul class="nav filtertabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#Workers">Workers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#Assets">Assets</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="Workers" class="tab-pane active">
+                <div class="worker-card">
+                    <div class="worker-left">
+                        <div class="worker-name">John Doe</div>
+                        <div class="worker-zone">My Zone Name</div>
+                    </div>
+                    <div class="worker-right">
+                        <div class="worker-starttime"><span>18/10/2020 10:00</span></div>
+                        <div class="worker-endtime"><span>18/10/2020 10:25</span></div>
+                    </div>
+                    <div class="worker-end">
+                        <div class="worker-duration-icon"></div>
+                        <div class="worker-time"><span>25</span> mins</div>
+                    </div>
+                </div>
+
+                <div class="worker-card">
+                    <div class="worker-left">
+                        <div class="worker-name">John Doe</div>
+                        <div class="worker-zone">My Zone Name</div>
+                    </div>
+                    <div class="worker-right">
+                        <div class="worker-starttime"><span>18/10/2020 10:00</span></div>
+                        <div class="worker-endtime"><span>18/10/2020 10:25</span></div>
+                    </div>
+                    <div class="worker-end">
+                        <div class="worker-duration-icon"></div>
+                        <div class="worker-time"><span>25</span> mins</div>
+                    </div>
+                </div>
+                <div class="worker-card">
+                    <div class="worker-left">
+                        <div class="worker-name">John Doe</div>
+                        <div class="worker-zone">My Zone Name</div>
+                    </div>
+                    <div class="worker-right">
+                        <div class="worker-starttime"><span>18/10/2020 10:00</span></div>
+                        <div class="worker-endtime"><span>18/10/2020 10:25</span></div>
+                    </div>
+                    <div class="worker-end">
+                        <div class="worker-duration-icon"></div>
+                        <div class="worker-time"><span>25</span> mins</div>
+                    </div>
+                </div>
+
+                <div class="worker-card">
+                    <div class="worker-left">
+                        <div class="worker-name">John Doe</div>
+                        <div class="worker-zone">My Zone Name</div>
+                    </div>
+                    <div class="worker-right">
+                        <div class="worker-starttime"><span>18/10/2020 10:00</span></div>
+                        <div class="worker-endtime"><span>18/10/2020 10:25</span></div>
+                    </div>
+                    <div class="worker-end">
+                        <div class="worker-duration-icon"></div>
+                        <div class="worker-time"><span>25</span> mins</div>
+                    </div>
+                </div>
+
+                <div class="worker-card">
+                    <div class="worker-left">
+                        <div class="worker-name">John Doe</div>
+                        <div class="worker-zone">My Zone Name</div>
+                    </div>
+                    <div class="worker-right">
+                        <div class="worker-starttime"><span>18/10/2020 10:00</span></div>
+                        <div class="worker-endtime"><span>18/10/2020 10:25</span></div>
+                    </div>
+                    <div class="worker-end">
+                        <div class="worker-duration-icon"></div>
+                        <div class="worker-time"><span>25</span> mins</div>
+                    </div>
+                </div>
+                <div class="worker-card">
+                    <div class="worker-left">
+                        <div class="worker-name">John Doe</div>
+                        <div class="worker-zone">My Zone Name</div>
+                    </div>
+                    <div class="worker-right">
+                        <div class="worker-starttime"><span>18/10/2020 10:00</span></div>
+                        <div class="worker-endtime"><span>18/10/2020 10:25</span></div>
+                    </div>
+                    <div class="worker-end">
+                        <div class="worker-duration-icon"></div>
+                        <div class="worker-time"><span>25</span> mins</div>
+                    </div>
+                </div>
+
+                <div class="worker-card">
+                    <div class="worker-left">
+                        <div class="worker-name">John Doe</div>
+                        <div class="worker-zone">My Zone Name</div>
+                    </div>
+                    <div class="worker-right">
+                        <div class="worker-starttime"><span>18/10/2020 10:00</span></div>
+                        <div class="worker-endtime"><span>18/10/2020 10:25</span></div>
+                    </div>
+                    <div class="worker-end">
+                        <div class="worker-duration-icon"></div>
+                        <div class="worker-time"><span>25</span> mins</div>
+                    </div>
+                </div>
+
+                <div class="worker-card">
+                    <div class="worker-left">
+                        <div class="worker-name">John Doe</div>
+                        <div class="worker-zone">My Zone Name</div>
+                    </div>
+                    <div class="worker-right">
+                        <div class="worker-starttime"><span>18/10/2020 10:00</span></div>
+                        <div class="worker-endtime"><span>18/10/2020 10:25</span></div>
+                    </div>
+                    <div class="worker-end">
+                        <div class="worker-duration-icon"></div>
+                        <div class="worker-time"><span>25</span> mins</div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="Assets" class="tab-pane fade"><br>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="grey-row">
+        filter
+    </div>
+    <!-- <div>
+        <ngx-heatmap [height]="height" [width]="width" [maxDataPoints]="500" [minDataPoints]="500" [heatPoints]="[{ x: 10, y: 15, value: 5}, { x: 5, y: 20, value: 4}]">
+        </ngx-heatmap>
+    </div> -->
+</div>
